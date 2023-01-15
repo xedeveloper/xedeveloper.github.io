@@ -18437,7 +18437,10 @@ var $async$NH=A.a0(function(a,b){if(a===1)return A.X(b,r)
 while(true)switch(s){case 0:n=$.aju()
 s=2
 return A.a4(n.UD(),$async$NH)
-case 2:q=$.a8U()
+case 2:q=document.querySelector("#loading_indicator")
+p=q.parentNode
+if(p!=null)p.removeChild(q)
+q=$.a8U()
 p=A.a([],t.sK)
 o=t.H
 n.SM(null,q,null,!1,t.EG.b(p),B.kq,t.KD,o,o)
